@@ -11,8 +11,8 @@ let isDone: boolean = false;
 // 编译通过
 // 后面约定，未强调编译错误的代码片段，默认为编译通过
 
-//注意，使用构造函数 Boolean 创造的对象不是布尔值：
-
+/**
+ * 注意，使用构造函数 Boolean 创造的对象不是布尔值：
 let createdByNewBoolean: boolean = new Boolean(1);
 
 // Type 'Boolean' is not assignable to type 'boolean'.
@@ -25,6 +25,9 @@ let createdByNewBoolean: Boolean = new Boolean(1);
 
 let createdByBoolean: boolean = Boolean(1);
 //在 TypeScript 中，boolean 是 JavaScript 中的基本类型，而 Boolean 是 JavaScript 中的构造函数。其他基本类型（除了 null 和 undefined）一样，不再赘述。
+
+ */
+
 
 // //数值§
 //使用 number 定义数值类型：
@@ -94,9 +97,10 @@ let u: undefined = undefined;
 let n: null = null;
 //与 void 的区别是，undefined 和 null 是所有类型的子类型。也就是说 undefined 类型的变量，可以赋值给 number 类型的变量：
 
-// 这样不会报错
+/**
+ * 这样不会报错
 let num: number = undefined;
-// 这样也不会报错
+ * 这样也不会报错
 let u: undefined;
 let num: number = u;
 
@@ -104,3 +108,5 @@ let num: number = u;
 let u: void;
 let num: number = u;
 // Type 'void' is not assignable to type 'number'.
+
+ */
