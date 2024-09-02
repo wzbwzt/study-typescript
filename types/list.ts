@@ -1,7 +1,6 @@
 //数组类型
 //在 TypeScript 中，数组类型有多种定义方式，比较灵活。
 
-
 //「类型 + 方括号」表示法§
 let fibonacci: number[] = [1, 1, 2, 3, 5];
 /**
@@ -21,32 +20,29 @@ fibonacci.push('8');
 
  */
 
-
 //数组泛型
 //使用数组泛型（Array Generic） Array < elemType > 来表示数组：
 
 let fibonacci2: Array<number> = [1, 1, 2, 3, 5];
-
 
 //用接口表示数组
 //NumberArray 表示：只要索引的类型是数字时，那么值的类型必须是数字。
 //一般不会这么做，因为这种方式比前两种方式复杂多了。
 //不过有一种情况例外，那就是它常用来表示类数组。
 interface NumberArray {
-	[index: number]: number;
+  [index: number]: number;
 }
 let fibonacci3: NumberArray = [1, 1, 2, 3, 5];
-
 
 //类数组§
 //类数组（Array - like Object）不是数组类型，比如 arguments：
 //除了约束当索引的类型是数字时，值的类型必须是数字之外，也约束了它还有 length 和 callee 两个属性。
 function sum() {
-	let args: {
-		[index: number]: number;
-		length: number;
-		callee: Function;
-	} = arguments;
+  let args: {
+    [index: number]: number;
+    length: number;
+    callee: Function;
+  } = arguments;
 }
 
 /**
@@ -69,4 +65,4 @@ interface IArguments {
  */
 
 //any 在数组中的应用
-let list: any[] = ['xcatliu', 25, { website: 'http://baidu.com' }];
+let list: any[] = ["xcatliu", 25, { website: "http://baidu.com" }];

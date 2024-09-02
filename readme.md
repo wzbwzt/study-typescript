@@ -1,8 +1,7 @@
 # typeScript 学习笔记
 
-
->Typed JavaScript at Any Scale.
->添加了类型系统的 JavaScript，适用于任何规模的项目。
+> Typed JavaScript at Any Scale.
+> 添加了类型系统的 JavaScript，适用于任何规模的项目。
 
 以上描述是官网对于 TypeScript 的定义。
 
@@ -27,7 +26,7 @@
 
 ### TypeScript 是静态类型
 
-` 类型系统按照「类型检查的时机」来分类，可以分为动态类型和静态类型。 `
+`类型系统按照「类型检查的时机」来分类，可以分为动态类型和静态类型。`
 
 动态类型是指在运行时才会进行类型检查，这种语言的类型错误往往会导致运行时错误。
 JavaScript 是一门解释型语言，没有编译阶段，所以它是动态类型.
@@ -36,16 +35,19 @@ JavaScript 是一门解释型语言，没有编译阶段，所以它是动态类
 TypeScript 在运行前需要先编译为 JavaScript，而在编译阶段就会进行类型检查，所以 TypeScript 是静态类型，
 
 ### TypeScript 是弱类型§
-` 类型系统按照「是否允许隐式类型转换」来分类，可以分为强类型和弱类型 `
+
+`类型系统按照「是否允许隐式类型转换」来分类，可以分为强类型和弱类型`
 
 TypeScript 是完全兼容 JavaScript 的，它不会修改 JavaScript 运行时的特性，所以它们都是弱类型。
 
 ## 与标准同步发展§
-` TypeScript 的另一个重要的特性就是坚持与 ECMAScript 标准同步发展。 `
+
+`TypeScript 的另一个重要的特性就是坚持与 ECMAScript 标准同步发展。`
 
 ECMAScript 是 JavaScript 核心语法的标准，自 2015 年起，每年都会发布一个新版本，包含一些新的语法。
 
 # 总结§
+
 什么是 TypeScript？
 
 - TypeScript 是添加了类型系统的 JavaScript，适用于任何规模的项目。
@@ -58,6 +60,6 @@ ECMAScript 是 JavaScript 核心语法的标准，自 2015 年起，每年都会
 - TypeScript 拥有活跃的社区，大多数常用的第三方库都提供了类型声明。
 - TypeScript 与标准同步发展，符合最新的 ECMAScript 标准（stage 3）。
 
-
 # roadmap
+
 ![roadmap](./roadmap.jpg)
