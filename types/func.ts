@@ -6,12 +6,12 @@
 
 // 函数声明（Function Declaration）
 function sum(x, y) {
-	return x + y;
+  return x + y;
 }
 
 // 函数表达式（Function Expression）
 let mySum = function (x, y) {
-	return x + y;
+  return x + y;
 };
 
  */
@@ -82,11 +82,11 @@ let tom = buildName("Tom");
 /**
  *需要注意的是，可选参数必须接在必需参数后面。换句话说，可选参数后面不允许再出现必需参数了：
 function buildName(firstName?: string, lastName: string) {
-	if (firstName) {
-		return firstName + ' ' + lastName;
-	} else {
-		return lastName;
-	}
+  if (firstName) {
+    return firstName + ' ' + lastName;
+  } else {
+    return lastName;
+  }
 }
 let tomcat = buildName('Tom', 'Cat');
 let tom = buildName(undefined, 'Tom');
@@ -128,7 +128,7 @@ push(a, 1, 2, 3);
 
 function push(array: any[], ...items: any[]) {
     items.forEach(function(item) {
-	array.push(item);
+  array.push(item);
     });
 }
 
