@@ -64,6 +64,6 @@ ECMAScript 是 JavaScript 核心语法的标准，自 2015 年起，每年都会
 
 ![roadmap](./roadmap.jpg)
 
-
 文献来源：
- - [知乎](https://juejin.cn/post/7182784298594861116)
+
+- [知乎](https://juejin.cn/post/7182784298594861116)
